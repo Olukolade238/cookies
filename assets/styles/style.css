@@ -99,3 +99,63 @@ button {
     cursor: pointer;
     border-radius: 3px;
 }
+
+.outline {
+    background: transparent;
+    border: 1px solid #61d9e2;
+    color: #61d9e2;
+}
+
+.primary {
+    background: #61d9e2;
+    border: none;
+    color: #fff;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.toggle-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-row span {
+    flex: 1;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
