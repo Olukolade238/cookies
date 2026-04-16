@@ -28,8 +28,9 @@
                         <button class="primary">Accept all</button>
                         <button class="outline">Setting</button>
                     </div>
-                    <div class="cookie-bg">
-                        <h3>Settings</h3>
+                    <div id="settingsModal">
+                        <div class="cookie-bg">
+                            <h3>Settings</h3>
                             <div class="toggle-row">
                                 <span>Browser</span>
                                 <label class="switch">
@@ -44,6 +45,7 @@
                                     <span class="slider"></span>
                                 </label>
                             </div>
+                            <div class="toggle-row">
                                 <span>Screen width</span>
                                 <label class="switch">
                                     <input type="checkbox" id="width" checked>
@@ -58,6 +60,7 @@
                                 </label>
                             </div>
                             <button class="primary" id="saveSettings">Save settings</button>
+                        </div>
                     </div>
                 </section>
             </div>

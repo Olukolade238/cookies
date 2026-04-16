@@ -159,3 +159,23 @@ button {
     cursor: pointer;
     transition: 0.3s;
 }
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    left: 1px;
+    top: 1px;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background: #61d9e2;
+}
+
+input:checked + .slider::before {
+    transform: translateX(20px);
+}
