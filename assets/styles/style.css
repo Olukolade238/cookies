@@ -42,3 +42,33 @@ body {
     border-radius: 10px;
     transition: 0.5s;
 }
+
+#cookieModal {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
+#settingsModal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#settingsModal h3 {
+    text-align: center;
+}
+
+#settingsModal .cookie-bg {
+    width: 300px;
+    max-width: 90%;
+}
+
+#saveSettings {
+    align-self: center;
+    margin-top: auto;
+    width: 200px;
+}
+
