@@ -72,3 +72,30 @@ body {
     width: 200px;
 }
 
+.hd {
+    display: flex;
+    align-items: center;
+}
+
+.hd img {
+    width: 40px;
+}
+
+.hd span {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 5px;
+    color: #61d9e2;
+}
+
+.cookie-bg a {
+    color: #61d9e2;
+    text-decoration: none;
+}
+
+button {
+    padding: 13px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
