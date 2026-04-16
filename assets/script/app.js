@@ -99,25 +99,32 @@ openSettingsBtn.onclick = function () {
 
 // Save setting
 saveSettingsBtn.onclick = function () {
-    let savedSomething = false;
 
     if (optBrowser.checked) {
         setCookie("browser", getBrowser());
-        savedSomething = true;
-    }   
+    } else {
+        setCookie("browser", "rejected");
+    }
+
     if (optOS.checked) {
         setCookie("os", getOS());
-        savedSomething = true;
+    } else {
+        setCookie("os", "rejected");
     }
+
     if (optWidth.checked) {
         setCookie("width", screen.width);
-        savedSomething = true;
+    } else {
+        setCookie("width", "rejected");
     }
+
     if (optHeight.checked) {
         setCookie("height", screen.height);
-        savedSomething = true;
+    } else {
+        setCookie("height", "rejected");
     }
-    setCookie("userChoice", savedSomething ? "custom" : "none");
+    
+    setCookie("userChoice", "custom");
 
     mainModal.style.display = "none";
 };
