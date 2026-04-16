@@ -1,1 +1,7 @@
 @charset 'UTF-8';
+
+.container { /* Main */
+    width: min(100% - 30px, 1000px);
+    margin-inline: auto;
+    box-sizing: border-box;
+}
